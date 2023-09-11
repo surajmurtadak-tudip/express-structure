@@ -4,4 +4,9 @@ const router = express.Router();
 
 router.get("/",homeController);
 
+router.post("/send",(req,res)=>{
+    console.log(req.body);
+    res.send(req.body);
+});
+
 module.exports = router;
